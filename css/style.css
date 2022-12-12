@@ -9,6 +9,47 @@
 .container {
     width: 80%;
     margin: 0 auto;
-    background-color: blueviolet;
-    height: 500px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul, header nav li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header nav li {
+    list-style-type: none;
+    float: left;
+    position: relative;
+    margin-right: 20px;
+    color: black;
+}
+
+header nav ul ul {
+    display: none;
+    position: absolute;
+}
+
+header nav ul li:hover ul {
+    display: block;
+}
+
+header nav ul ul li {
+    padding: 10px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+}
+
+.big-photo {
+    background-image: url(../img/grande.jpg);
+    height: 650px;
+    background-size: cover;
+    display: flex;
 }
