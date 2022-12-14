@@ -1,8 +1,5 @@
 * {
     box-sizing: border-box;
-}
-
-.body {
     margin: 0;
 }
 
@@ -11,13 +8,31 @@
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header nav ul, header nav li {
+header .left {
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    margin-left: 50px;
+}
+
+header nav ul,
+header nav li {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -28,12 +43,28 @@ header nav li {
     float: left;
     position: relative;
     margin-right: 20px;
+    padding-top: 10px;
     color: black;
+}
+
+header nav li li {
+    margin-right: 0;
+}
+
+header nav li li:hover {
+    margin-right: 0;
+    background-color: #ffbc0d;
 }
 
 header nav ul ul {
     display: none;
     position: absolute;
+    background-color: white;
+    padding-top: 20px;
+}
+
+header nav ul li:hover {
+    border-top: #ffbc0d solid 4px;
 }
 
 header nav ul li:hover ul {
@@ -41,15 +72,110 @@ header nav ul li:hover ul {
 }
 
 header nav ul ul li {
-    padding: 10px;
+    padding: 5px;
+    border: solid gainsboro 1px;
+    border-radius: 6px;
     width: 300px;
     background-color: white;
     display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .big-photo {
     background-image: url(../img/grande.jpg);
-    height: 650px;
     background-size: cover;
+    height: 550px;
     display: flex;
+}
+
+button.btn-yell {
+    background-color: #ffbc0d;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: none;
+    color: black;
+    font-weight: bold;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.btn-fondo {
+    border-color: transparent;
+    background-color: gainsboro;
+    margin-top: 15px;
+    padding: 10px 35px;
+    border-radius: 5px;
+    color: gray;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+
+.card {
+    text-align: center;
+    box-shadow: 0 0 20px gainsboro;
+    border: solid 1px gainsboro;
+    border-radius: 7px;
+    margin: 20px 0;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.card-content {
+    margin: 10px;
+}
+
+.card button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.card h2,
+.aviso h3 {
+    color: rgb(88, 88, 88);
+}
+
+.card p,
+.aviso p {
+    color: rgb(153, 153, 153);
+}
+
+.col-2 {
+    width: 47%;
+}
+
+.col-3 {
+    width: 31%;
+}
+
+.aviso {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto 10px auto;
+}
+
+.aviso p {
+    width: 70%;
+    font-size: small;
+}
+
+.yellow-box {
+    background-color: #ffbc0d;
+}
+
+.flex-txt-center {
+    text-align: center;
+}
+
+.gotas img{
+    width: 100%;
 }
