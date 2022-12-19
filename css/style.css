@@ -127,7 +127,6 @@ button.btn-yell {
 .card-row {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
     flex-wrap: wrap;
 }
 
