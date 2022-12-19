@@ -61,6 +61,17 @@ header nav ul ul {
     position: absolute;
     background-color: white;
     padding-top: 20px;
+    height: 400px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+header nav ul ul::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari and Opera */
 }
 
 header nav ul li:hover {
@@ -113,6 +124,13 @@ button.btn-yell {
     color: gray;
 }
 
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
 .card img {
     width: 100%;
     border-radius: 7px 7px 0 0;
@@ -149,11 +167,11 @@ button.btn-yell {
 }
 
 .col-2 {
-    width: 47%;
+    width: 49%;
 }
 
 .col-3 {
-    width: 31%;
+    width: 32%;
 }
 
 .aviso {
@@ -170,12 +188,53 @@ button.btn-yell {
 
 .yellow-box {
     background-color: #ffbc0d;
+    padding: 10px;
 }
 
-.flex-txt-center {
+.yellow-box .row {
+    align-items: flex-start;
+}
+
+.yellow-box button {
+    margin: 0;
+}
+
+.txt-center {
     text-align: center;
 }
 
-.gotas img{
+.mx-5 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fa-facebook {
+    color: #4e2186;
+}
+
+.fa-instagram {
+    color: #4e2186;
+}
+
+.gotas img {
     width: 100%;
+}
+
+.my-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-between;
 }
